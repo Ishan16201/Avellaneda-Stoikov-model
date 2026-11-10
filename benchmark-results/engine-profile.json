@@ -1,0 +1,27 @@
+{
+  "git_revision": "e9cb6f8",
+  "library_version": "0.1.0",
+  "worker_count": 10,
+  "peak_resident_set_bytes": 8912896,
+  "events_per_second": 310014.18165918835,
+  "simulation_paths_per_second": 644.75613214006,
+  "sequential_paths_per_second": 309.78184527523189,
+  "parallel_paths_per_second": 644.75613214006,
+  "cpu_path_speedup": 2.0813231697526158,
+  "hawkes_events_per_second": 1423921.7206938383,
+  "optimization_iterations_per_second": 6038.2674224479342,
+  "surrogate_iterations_per_second": 6038.2674224479342,
+  "gpu_hawkes_speedup": 0,
+  "cuda_available": false,
+  "cuda_cpu_max_intensity_error": 0,
+  "cpu_serial_parallel_max_intensity_error": 0,
+  "stages": [
+    {"name": "hawkes-generation-cpu-reference", "wall_seconds": 0.0056225000880658627, "items_per_second": 1423921.7206938383, "item_count": 8006},
+    {"name": "exchange-episodes-serial", "wall_seconds": 0.025824625045061111, "items_per_second": 309.78184527523189, "item_count": 8},
+    {"name": "exchange-episodes-parallel", "wall_seconds": 0.012407792033627629, "items_per_second": 644.75613214006, "item_count": 8},
+    {"name": "batched-hawkes-cpu-serial", "wall_seconds": 0.056436500000000001, "items_per_second": 8999034.3129003383, "item_count": 507874},
+    {"name": "batched-hawkes-cpu-parallel", "wall_seconds": 0.0096654589999999995, "items_per_second": 52545254.188135296, "item_count": 507874},
+    {"name": "surrogate-optimization", "wall_seconds": 0.016561041935347021, "items_per_second": 6038.2674224479342, "item_count": 100},
+    {"name": "avellaneda-stoikov-episode", "wall_seconds": 0.0022792080417275429, "items_per_second": 438.74889070768745, "item_count": 1}
+  ]
+}
